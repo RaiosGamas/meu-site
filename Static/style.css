@@ -1,0 +1,285 @@
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
+
+
+
+body{font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #aaa;
+  font-size: 1.1rem;
+
+
+}
+
+/* menu de navegacao */
+
+.header{background-color: #625b5b;
+  width: 100%;
+  height: 10rem;   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-direction: row;
+  overflow: hidden;
+  
+
+}
+
+.header #logo{position: relative;
+  left: 5rem;
+  cursor: pointer;
+  
+}
+
+
+.header #logo:hover{transform: scale(2.5);}
+
+ .header .menu-deskpto ul{display: flex;
+}
+
+li{list-style-type: none;}
+
+.header .desketop nav a{text-decoration: none;
+  margin: 5px;
+ color: white;
+
+
+}
+
+.header a.active{background-color: #027b53;
+  text-align: center;
+  padding: 14px 16px;    /* a,ctive menu*/
+  border-radius: 6px;
+}
+
+
+
+
+
+
+.header .desketop nav a:hover{color:#2e0ebe}
+
+.header .menu-deskpto, a.active{color: #2e0ebe;}
+
+.dropbtn{cursor: pointer;
+  background-color: blue; /*button de naveacao*/
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  min-width: 160%;
+  color: white
+}
+
+
+.dropbtn:hover, .dropbtn:focus{background-color: #2980b9;}
+
+.dropdown-content{display:none;
+  position: absolute;
+  box-shadow: 2px 3px 5px 8px rgb(56, 56, 62);
+  background-color: #aaa;
+  min-width: 149px;
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {display: inline-block;
+  color: rgb(255, 255, 255);
+  padding:  15px 16px;
+  text-decoration: none;
+  text-align: center;
+}
+.dropdown{position: relative;
+display: inline-block;
+margin-right: 100px;
+}
+
+
+
+
+.dropdown-content a:hover {background-color: blue;}
+
+
+
+.dropdown:hover .dropdown-content{display: block;
+  
+  
+}
+
+.dropdown:hover .dropbtn{background-color: rgb(24, 134, 230);}
+
+
+  
+  
+
+
+ /* fim  menu de navegacao */
+
+
+ /* nome do site VagadeEmprego */
+ .Vagade{background-color: white;
+  background-image: linear-gradient(red, blue);
+  padding: 14px 16px;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+.Vagade:hover{transform: scale(2.5);}
+
+
+
+/*Reflexao*/
+.frase-total{background-color: #383636;
+  margin-top: 0;
+
+}
+
+.sozino{color: white;
+  text-align: center;
+  background-color: #9e9898;
+  border-bottom-right-radius: 50px;
+  margin-right: 80%;
+  padding: 14px 14px;
+}
+
+#frase{text-align: right;       /*Reflexao*/
+font-size: 19px;
+font-family: "Berkshire Swash", serif;
+line-height: 40px;
+font-weight: 400;
+font-style: normal;
+color: rgb(52, 225, 9);
+margin-top: 30px;
+margin-inline: 30px;
+padding: 20px;
+border-radius: 6px;
+text-align: center;
+
+}
+
+
+.disponivel {font-size: 17px; 
+margin-inline: 20px; /* as empresa com vagas desponivel (h2)*/
+margin-top: 20px;
+margin-bottom: 10px;
+
+
+}
+ 
+
+
+.publicidade{background-color: #d41b1b;
+padding: 1.2rem;
+text-align: center;             /*public*/
+font-size: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+color: white;
+background-image: linear-gradient(to left, blue, rgb(40, 38, 38))
+}
+
+
+
+.outros-tipos {                       /* outras  h3 vaga de emprego*/
+    font-size: 20px;
+    margin-inline: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000;
+    
+  }
+
+
+  dt, dl{margin-inline:   20px;
+    font-size: 16px;
+    
+  }
+
+  .outros-tipos, nav a{
+    color: #000;
+  }
+
+
+@keyframes social{
+  0%{color: #d41b1b;}
+  50%{color: #09df3b;}
+  100%{color: #d41b1b;}
+}
+
+
+.dicaDoDia{
+ background-color: #4d4040;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 2.1rem;
+  overflow: hidden;
+
+  
+}
+
+ #social{ 
+  position: relative;
+  text-align: center;
+  font-size: 2rem; 
+  color: #d41b1b;
+  animation: normal;
+  animation-name: social;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+
+ 
+ .justincia{  font-size: 20px;
+text-align: center;
+  color: white;
+  line-height: 1.9rem;
+  
+    }
+
+
+.citaceos{
+  position: relative;
+left: 80%;
+color: white;}
+
+
+footer{text-align: center;
+  background-color: #811bd4; /*footer background*/
+ padding: 80px;
+ font-size: 17px;
+
+}
+
+footer a {
+  display: inline-block;
+   /* footer Elemento filho */
+  padding: 5px;
+  border-radius: 6px;
+
+
+}
+
+footer a:hover{
+color: #9e9898;
+}
+
+
+/* Esses informacoes sao de menu mobile */
+
+.menu-mobile{display: none;}
+
+
+/* Esses informacoes sao de menu mobile */
+.table{display: none;}

@@ -1,0 +1,292 @@
+@media screen and (max-width: 600px), (max-width: 768px) {
+
+  html{font-size: 16px;}/* 1rem = 16px  meu tamanho de elemento base*/
+    
+/* elemento universal */
+    body{font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #ccc;
+      font-size: 1.1rem;
+    }
+    
+    
+
+
+/* O cultar Menu desktop */
+ .header .menu-deskpto ul{display: none;
+  }
+
+  
+
+  .header{background-color: #2c1c1c;
+    display: none;
+   }
+
+ .dropbtn{
+    display: none;
+   }
+  /* Fim de... O cultar Menu desktop */
+
+  /* menu de table ocultar */
+
+
+    
+    /* menu de navegacao  mobile*/
+    
+    .menu-mobile{background-color: #ffffff0c;
+
+      width: 100%;
+      height: 19vh; 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      position: relative;
+      overflow-y: hidden;
+    
+      
+    }
+   /*logo do site*/
+#logo, img{
+  margin-inline: -2px;
+ }
+ 
+   
+     /* nome do site VagadeEmprego */
+      
+  .vmgmc{background-color: white;
+    background-image: linear-gradient(red, blue);
+    padding: 14px 16px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 20px;
+  }
+
+
+  
+  .overlay { 
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;   
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+ 
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+ 
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .butao{
+    width: 100%;
+    left: 90%;        /* funcoa de JavaScript span */
+  
+    
+  }
+
+
+  .dropdow-mobile{position: relative;
+  display: inline-block;}
+
+
+  .dropdowbtn{ font-family: 'Times New Roman', Times, serif;
+
+
+    font-size: 25px;
+    border: none;
+    text-align: center;
+    padding: 14px 16px;
+  font-size: 20px;
+}
+
+
+   ul {list-style-type: none;}
+
+  .dropdow-content{display: block;
+    position: fixed;
+min-width: 160px;
+display: none;
+padding: 12px 14px;
+z-index: 1;
+border-radius: 3px;
+overflow: hidden;
+}
+    
+  
+  
+   .dropdow-content nav a{color: white;
+  
+    border: 2px solid;
+    text-decoration: none;
+    border: none;
+    margin: 5px;
+}
+
+
+   .dropdow-content nav a:hover{color: rgb(208, 208, 20);}
+
+    
+
+
+   .dropdow-mobile:hover .dropdow-content{display: block;}
+  
+     /* fim  menu de navegacao */
+    
+    /*Reflexao*/
+.frase-total{background-color: #383636;
+  margin-top: 10px;
+
+}
+
+.sozino{
+  margin-right: 50%;
+  
+}
+
+#frase{font-size: 16px;
+line-height: 1.5rem;      /*Reflexao*/
+
+
+}
+
+
+.disponivel {font-size: 0.8rem; 
+  margin-inline: 20px; /* as empresa com vagas desponivel (h2)*/
+
+  }
+
+
+
+  
+.publicidade{background-color: #d41b1b;
+             /*public*/
+  font-size: 0.9rem;
+  
+  }
+  
+  
+
+
+
+  
+.outros-tipos {                       /* outras  h3 vaga de emprego*/
+  font-size: 1rem;
+  
+  
+}
+
+
+
+
+
+
+  
+.dicaDoDia{
+  background-color: #4d4040;
+   margin-top: 0;
+   margin-bottom: 0;
+   line-height: 2.1rem;
+   overflow: hidden;
+ 
+   
+ }
+ 
+
+ 
+ 
+  
+  .justincia{  font-size: 17px;
+
+   line-height: 1.5rem;
+   
+     }
+ 
+ 
+ .citaceos{
+   position: relative;
+ left: 70%;
+ color: white;}
+
+
+ 
+ footer{ text-align: center;
+  background-color: #67606d; /*footer background*/
+ margin-top: 0;
+ padding: 0px 20px;
+ 
+ 
+}
+
+footer a {
+  
+  display: inline-block;
+   /* footer Elemento filho */
+  
+
+
+}
+
+footer a:hover{color: #9e9898;
+}
+
+
+ 
+
+}

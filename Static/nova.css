@@ -1,0 +1,21 @@
+body{background-color: rgba(121, 102, 142, 0.491);
+    color: rgb(7, 147, 33);
+    
+    font-family: 'Times New Roman', Times, serif
+  }
+
+
+
+h1{
+text-align: center;
+}
+
+.texto{
+font-size: x-large;
+}
+
+.nome{
+text-align: center;
+font-size: x-large;
+
+}

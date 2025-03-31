@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="static/style.css">
+    <link rel="stylesheet" @media screen and(max-width: 600px) href="static/responsivo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Grenze+Gotisch:wght@100..900&display=swap" 
+    rel="stylesheet">
+    <title>VagasdeEmpregosMc</title>
+     </head>
+<body>
+
+
+  <header class="header">
+<Section id="logo">
+      <img  src="../static/logo.png" alt="icon do site" width="90" height="90">
+
+  </Section>
+
+  <section>
+    <!-- nome do site -->
+ <div class="Vagade"><h1><i>VagadeEmpregosMç</i></div>
+</section>
+
+</section>
+ <section>
+  <div class="menu-deskpto">
+    <div class="desketop">
+    <nav>
+     <ul>
+    <li><a href="#" class="active">Menu</a></li>
+    <li><a class="sobre" href="{{url_for('sobre')}}">Sobre Página </a></li>
+    </ul>
+    </nav>
+
+    </div>
+  </div>
+ </section>
+
+ <section>
+  <div class="dropdown">
+    <button class="dropbtn">Contacto</button>
+    <div class="dropdown-content">
+      <a href = "https://wa.me/+258834532279" target="_blank"><img src ="static/whatsapp.png"  
+        alt="ico Whatsapp" width="40" height="40"></a>
+    
+      <a href = "mailto:vagadeemprego945@gmail.com?subject=Assunto&body=Digite sua mensagem">
+        <img src ="static/gmail.png"  
+        alt="ico gmail" width="40" height="40"></a>
+    
+ </div>
+</div>
+ </section>
+  
+  </header>
+
+ <!-- Esse e Menu mobile -->
+
+   <article class="menu-mobile" > 
+    <Section id="logo">
+      <img  src="../static/logo.png" alt="icon do site" width="80" height="80">
+
+  </Section>
+
+  <section>
+            <!-- nome do site -->
+         <div class="vmgmc"><h1><i>VagadeEmpregosMç</i></div>
+        </section>
+
+      <section>
+        <div class="butao">
+          <span style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776</span>
+          </div>
+      
+      </section>
+        <section> <!-- menu mobile -->
+          <div id="mynav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="mobile">
+                  <div class="overlay-contant">
+              <nav>
+                  <ul>
+                      
+                      <li><a  href="{{url_for('sobre')}}">Sobre</a></li>
+                      <section>
+      <section>
+        <div class="dropdow-mobile">
+
+            <button class="dropdowbtn">Contacto</button>
+
+        <div class="dropdow-content">
+            <nav>
+            
+              <a href = "https://wa.me/+258834532279" target="_blank"><img src ="static/whatsapp.png"  
+                alt="ico Whatsapp" width="40" height="40"></a>
+            
+              <a href = "mailto:vagadeemprego945@gmail.com?subject=Assunto&body=Digite sua mensagem">
+                <img src ="static/gmail.png"  
+                alt="ico gmail" width="40" height="40"></a>
+            
+
+            </nav>
+        </div>
+
+         </div>
+        </section>
+    </nav>
+    </div>
+</div>
+</section>
+</article>
+
+
+
+<!-- ocultar e mostrar os elemento com Javascript Menu-mobile -->
+<script>
+  // O menu disleza de esquerda para direita ao ser Clickado (abrindo)
+function openNav(){
+  document.getElementById("mynav").style.width="100%";
+}
+//O menu disleza de direita para squerda ao ser Clickado (fechando)
+function closeNav() {
+  document.getElementById("mynav").style.width = "0%";
+}
+</script>
+
+<aside>
+  <div class="frase-total">
+
+    <div class="sozino">Você não está sozinho!</div>
+  
+    <p id="frase">"Não temas, porque eu sou contigo; não te assombres, porque eu sou o teu Deus; eu te fortaleço, e te ajudo, 
+      e te sustento com a destra da minha justiça".
+    <br/><cite> == Isaías 41:10: ==</cite></p> <!--reflexão-->
+  </div>
+</aside>
+
+
+<article>
+   <div class="disponivel">
+    <h2 >As Empresas com Vagas disponíveis serão mostradas aqui.</h2>
+    </div>
+    <div class="vagas">
+     <nav>
+    <dl>
+    <dt><a href ="{{url_for('tmb')}}">Tmb</a></dt><br/>
+    <dt><a href ="pagina.html">CFM</a></dt><br/>
+    <dt><a href ="pagina.html">L. Star</a></dt><br/>
+    <dt><a href ="pagina.html">CMB</a></dt><br/></dl>
+     </nav>
+    </div>
+</article>
+
+    <aside>
+        <div class="publicidade">Sê você viu? o seu cliente também podem ver, publique aqui a sua marca!
+        </div>
+    </aside>
+
+<article>
+  <div class="outros-tipos">
+         <h3>Outras Vagas disponíveis serão mostradas aqui.</h3>
+  </div>
+<div class="sub-tipo">
+     <nav>
+      <dl>
+     <dt><a href ="pagina.html">farmácia:</a><br/>&nbsp;&nbsp;temos quatro(4) Vagas disponíveis.</dt><br/>
+      <dt><a href ="pagina.html">loja humad:</a><br/>&nbsp;&nbsp;temos uma(1) Vaga disponível.</dt><br/>
+      <dt><a href ="pagina.html">Amarzens:</a><br/>&nbsp;&nbsp;temos Quatro(4) vagas disponíveis.</dt><br/>
+      </dl>
+     </nav>
+    </div>
+</article>
+
+  <aside>
+    <div class="publicidade">Sê você viu? o seu cliente também podem ver, publique aqui a sua marca!
+    </div>
+  </aside>
+    
+<article>
+  <div class="dicaDoDia">
+    <div class="subsocial">
+  <div id = "social"><h4>Justiça social</h4></div>
+  </div>
+<div class="justincia">Justiça é a primeira virtude das instituições socias[...].Por mais
+   eficazes e bem organizada que sejam as instituições e as leis, devem ser<br/>
+<b>reformadas</b> ou <b> abolidas</b> se for injustas.</div>
+
+<p><cite class="citaceos">==John Rawls==</cite></p>
+  </div>
+</article>
+
+<footer>
+
+  <nav>
+  <a href = "https://wa.me/+258834532279" target="_blank"><img src ="static/whatsapp.png"  
+    alt="ico Whatsapp" width="50" height="50"></a>
+
+  <a href = "mailto:vagadeemprego945@gmail.com?subject=Assunto&body=Digite sua mensagem">
+    <img src ="static/gmail.png"  
+    alt="ico gmail" width="50" height="50"></a>
+  </nav>
+</footer>
+
+</body>
+</html>
